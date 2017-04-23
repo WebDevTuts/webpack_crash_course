@@ -70,18 +70,27 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-function getHello() {
+/*function getHello() {
   return 'Hello There';
 }
+*/
 
-module.exports = getHello();
+let people = [
+  {name: 'John Doe'},
+  {name: 'Steve Smith'},
+  {name: 'Carol Williams'}
+];
+
+module.exports = people;
 
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-alert(__webpack_require__(0));
+let people = __webpack_require__(0);
+
+console.log(people[0].name);
 
 
 /***/ })

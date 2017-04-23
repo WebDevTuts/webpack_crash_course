@@ -1,5 +1,12 @@
-function getHello() {
+/*function getHello() {
   return 'Hello There';
 }
+*/
 
-module.exports = getHello();
+let people = [
+  {name: 'John Doe'},
+  {name: 'Steve Smith'},
+  {name: 'Carol Williams'}
+];
+
+module.exports = people;
