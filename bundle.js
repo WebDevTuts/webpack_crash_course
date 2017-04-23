@@ -70,7 +70,11 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = 'Hello Everyone';
+function getHello() {
+  return 'Hello There';
+}
+
+module.exports = getHello();
 
 
 /***/ }),
